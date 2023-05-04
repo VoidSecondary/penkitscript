@@ -38,7 +38,9 @@ echo -e "${GREEN}[*] Essentials installed${NC}"
 cd ~
 curl -OL https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
 sudo tar -C /usr/local -xvf go1.20.4.linux-amd64.tar.gz
-export PATH=$PATH:/usr/local/go/bin
+echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+source ~/.bashrc
+rm go1.20.4.linux-amd64.tar.gz
 
 # Nmap
 echo -e "${GREEN}[*] Installing Nmap${NC}"
