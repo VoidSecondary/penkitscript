@@ -40,9 +40,13 @@ cd ~
 curl -OL https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
 sudo tar -C /usr/local -xvf go1.20.4.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
+export PATH=$PATH:/usr/local/go/bin
 source ~/.bashrc
 rm go1.20.4.linux-amd64.tar.gz
+sleep 3
+go version
 echo -e "${BLUE}[*] Go installation is done"
+sleep 3
 
 # Nmap
 echo -e "${GREEN}[*] Installing Nmap${NC}"
