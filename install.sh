@@ -35,12 +35,14 @@ apt-get install -y tmux
 echo -e "${GREEN}[*] Essentials installed${NC}"
 
 # Install Go
+echo -e "${BLUE}[*] Installing Go"
 cd ~
 curl -OL https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
 sudo tar -C /usr/local -xvf go1.20.4.linux-amd64.tar.gz
 echo 'export PATH=$PATH:/usr/local/go/bin' >> ~/.bashrc
 source ~/.bashrc
 rm go1.20.4.linux-amd64.tar.gz
+echo -e "${BLUE}[*] Go installation is done"
 
 # Nmap
 echo -e "${GREEN}[*] Installing Nmap${NC}"
