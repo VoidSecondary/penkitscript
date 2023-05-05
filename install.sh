@@ -191,10 +191,12 @@ pip3 install setuptools pyyaml pymongo requests s3recon
 # subfinder
 echo -e "${GREEN}[*] Installing subfinder${NC}"
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
+ln -sf ~/go/bin/subfinder /usr/local/bin/subfinder
 
 # httpx
 echo -e "${GREEN}[*] Installing httpx ${NC}"
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+ln -sf ~/go/bin/httpx /usr/local/bin/httpx
 
 # whatweb 
 echo -e "${GREEN}[*] Installing whatweb${NC}"
@@ -212,11 +214,12 @@ python3 -m pip install fierce
 echo -e "${GREEN}[*] Installing amass${NC}"
 export GO111MODULE=on
 go install -v github.com/owasp-amass/amass/v3/...@master
+ln -sf ~/go/bin/amass /usr/local/bin/amass
 
 # ffuf
 echo -e "${GREEN}[*] Installing ffuf${NC}"
 go install github.com/ffuf/ffuf/v2@latest
-
+ln -sf ~/go/bin/ffuf /usr/local/bin/ffuf
 
 # SecLists
 read -p "Do you want to download SecLists? y/n " -n 1 -r
