@@ -190,7 +190,7 @@ pip3 install setuptools pyyaml pymongo requests s3recon
 
 # subfinder
 echo -e "${GREEN}[*] Installing subfinder${NC}"
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder
+go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 ln -sf ~/go/bin/subfinder /usr/local/bin/subfinder
 
 # httpx
