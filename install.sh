@@ -80,7 +80,7 @@ cd ~/toolkit
 git clone https://github.com/aboul3la/Sublist3r.git
 cd Sublist3r/
 pip install -r requirements.txt
-ln -s ~/toolkit/Sublist3r/sublist3r.py /usr/local/bin/sublist3r
+ln -sf ~/toolkit/Sublist3r/sublist3r.py /usr/local/bin/sublist3r
 
 # knock
 echo -e "${GREEN}[*] Installing Knockpy${NC}"
