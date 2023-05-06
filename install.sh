@@ -201,6 +201,11 @@ echo -e "${GREEN}[*] Installing notify by project discovery${NC}"
 go install -v github.com/projectdiscovery/notify/cmd/notify@latest
 ln -sf ~/go/bin/notify /usr/local/bin/notify
 
+# tlsx by project discovery
+echo -e "${GREEN}[*] Installing tlsx by project discovery${NC}"
+go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
+ln -sf ~/go/bin/tlsx /usr/local/bin/tlsx
+
 # whatweb 
 echo -e "${GREEN}[*] Installing whatweb${NC}"
 cd ~/toolkit
