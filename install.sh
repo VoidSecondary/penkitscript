@@ -155,13 +155,6 @@ gem install wpscan
 echo -e "${GREEN}[*] Installing dnsrecon${NC}"
 apt-get install -y dnsrecon
 
-# virtual-host-discovery
-cd ~/toolkit 
-git clone https://github.com/AlexisAhmed/virtual-host-discovery.git 
-cd virtual-host-discovery 
-chmod +x scan.rb 
-ln -sf ~/toolkit/virtual-host-discovery/scan.rb /usr/local/bin/virtual-host-discovery
-
 # CloudFlair
 echo -e "${GREEN}[*] Installing CloudFlair${NC}"
 cd ~/toolkit 
