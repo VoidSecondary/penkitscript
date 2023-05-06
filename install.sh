@@ -196,6 +196,11 @@ echo -e "${GREEN}[*] Installing interactsh by project discovery${NC}"
 go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
 ln -sf ~/go/bin/interactsh-client /usr/local/bin/interactsh-client
 
+# Notify by projectdiscovery
+echo -e "${GREEN}[*] Installing notify by project discovery${NC}"
+go install -v github.com/projectdiscovery/notify/cmd/notify@latest
+ln -sf ~/go/bin/notify /usr/local/bin/notify
+
 # whatweb 
 echo -e "${GREEN}[*] Installing whatweb${NC}"
 cd ~/toolkit
