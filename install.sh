@@ -198,6 +198,11 @@ echo -e "${GREEN}[*] Installing httpx ${NC}"
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 ln -sf ~/go/bin/httpx /usr/local/bin/httpx
 
+# interactsh
+echo -e "${GREEN}[*] Installing interactsh by project discovery${NC}"
+go install -v github.com/projectdiscovery/interactsh/cmd/interactsh-client@latest
+ln -sf ~/go/bin/interactsh-client /usr/local/bin/interactsh-client
+
 # whatweb 
 echo -e "${GREEN}[*] Installing whatweb${NC}"
 cd ~/toolkit
