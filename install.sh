@@ -168,7 +168,8 @@ ln -sf ~/toolkit/CloudFlair/cloudflair.py /usr/local/bin/cloudflair
 echo -e "${GREEN}[*] Installing dirsearch${NC}"
 cd ~/toolkit 
 git clone https://github.com/maurosoria/dirsearch.git --depth 1
-cd dirsearch 
+cd dirsearch
+pip install -r requirements.txt
 chmod +x dirsearch.py 
 ln -sf ~/toolkit/dirsearch/dirsearch.py /usr/local/bin/dirsearch
 
