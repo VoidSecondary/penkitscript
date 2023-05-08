@@ -240,6 +240,16 @@ then
     git clone https://github.com/danielmiessler/SecLists.git
 fi
 
+# OneListForAll
+read -p "Do you want to download OneListForAll by six2dez? y/n" -n 1 -r
+echo    
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	echo -e "${GREEN}[*] Downloading OneListForAll${NC}"
+	cd ~/toolkit/wordlists
+	git clone https://github.com/six2dez/OneListForAll.git
+fi
+
 # Cleanup
 echo -e "${GREEN}[*] Tidying up${NC}"
 apt-get clean
