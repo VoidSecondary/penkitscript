@@ -128,6 +128,14 @@ ln -sf ~/toolkit/XSStrike/xsstrike.py /usr/local/bin/xsstrike
 echo -e "${GREEN}[*] Installing sqlmap${NC}"
 apt-get install -y sqlmap
 
+# NoSQLMap
+echo -e "${Green} [*] Installing NoSQLMap${NC}"
+cd ~/toolkit
+git clone https://github.com/codingo/NoSQLMap.git
+cd NoSQLMap
+chmod +x setup.py
+python setup.py install
+
 # wfuzz
 echo -e "${GREEN}[*] Installing wfuzz${NC}"
 pip install --upgrade setuptools 
