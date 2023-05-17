@@ -61,14 +61,35 @@ cd massdns/
 make
 ln -sf ~/toolkit/massdns/bin/massdns /usr/local/bin/massdns
 
-# altdns
-echo -e "${GREEN}[*] Installing altdns${NC}"
-cd ~/toolkit 
-git clone https://github.com/infosec-au/altdns.git 
-cd altdns 
-pip install -r requirements.txt 
-chmod +x setup.py 
-python3 setup.py install
+# Nuclei
+echo -e "${GREEN}[*] Installing Nuclei"
+cd ~/toolkit
+mkdir Nuclei
+cd Nuclei
+go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+echo -e "${GREEN}[*] Installing Nuclei Templates"
+git clone https://github.com/projectdiscovery/nuclei-templates.git
+
+# Trufflehog
+echo -e "${GREEN}[*] Installing TruffleHog"
+cd ~/toolkit
+git clone https://github.com/trufflesecurity/trufflehog.git
+cd trufflehog
+go install
+
+# waybackurls
+echo -e "${GREEN}[*] Installing waybackurls"
+cd ~/toolkit
+mkdir waybackurls
+cd waybackurls
+go install github.com/tomnomnom/waybackurls@latest
+
+# FeroxBuster
+echo -e "${GREEN}[*] Installing FeroxBuster"
+cd ~/toolkit
+mkdir FeroxBuster
+cd FeroxBuster
+curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/main/install-nix.sh | bash
 
 # thc-hydra
 echo -e "${GREEN}[*] Installing thc-hydra${NC}"
@@ -95,14 +116,6 @@ python3 setup.py install
 # dirb
 echo -e "${GREEN}[*] Installing dirb${NC}"
 apt-get install -y dirb
-
-# teh_s3_bucketeers
-echo -e "${GREEN}[*] Installing teh_s3_bucketeers${NC}"
-cd ~/toolkit
-git clone https://github.com/tomdev/teh_s3_bucketeers.git 
-cd teh_s3_bucketeers 
-chmod +x bucketeer.sh 
-ln -sf ~/toolkit/teh_s3_bucketeers/bucketeer.sh /usr/local/bin/bucketeer
 
 # Recon-ng
 echo -e "${GREEN}[*] Installing Recon-ng${NC}"
@@ -159,9 +172,13 @@ cd wpscan/
 gem install bundler && bundle install --without test 
 gem install wpscan
 
-# dnsrecon
-echo -e "${GREEN}[*] Installing dnsrecon${NC}"
-apt-get install -y dnsrecon
+# dnsgen
+echo -e "${GREEN}[*] Installing dnsgen${NC}"
+cd ~/toolkit
+git clone https://github.com/ProjectAnte/dnsgen
+cd dnsgen
+pip3 install -r requirements.txt
+python3 setup.py install
 
 # CloudFlair
 echo -e "${GREEN}[*] Installing CloudFlair${NC}"
@@ -214,14 +231,6 @@ ln -sf ~/go/bin/notify /usr/local/bin/notify
 echo -e "${GREEN}[*] Installing tlsx by project discovery${NC}"
 go install github.com/projectdiscovery/tlsx/cmd/tlsx@latest
 ln -sf ~/go/bin/tlsx /usr/local/bin/tlsx
-
-# whatweb 
-echo -e "${GREEN}[*] Installing whatweb${NC}"
-cd ~/toolkit
-git clone https://github.com/urbanadventurer/WhatWeb.git
-cd WhatWeb
-chmod +x whatweb
-ln -sf ~/toolkit/WhatWeb/whatweb /usr/local/bin/whatweb
 
 # fierce
 echo -e "${GREEN}[*] Installing fierce${NC}"
