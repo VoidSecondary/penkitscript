@@ -82,9 +82,9 @@ ln -sf ~/toolkit/trufflehog /usr/local/bin/trufflehog
 # waybackurls
 echo -e "${GREEN}[*] Installing waybackurls"
 cd ~/toolkit
-mkdir waybackurls
+git clone https://github.com/tomnomnom/waybackurls.git
 cd waybackurls
-go install github.com/tomnomnom/waybackurls@latest
+go install
 ln -sf ~/toolkit/waybackurls /usr/local/bin/waybackurls
 
 # FeroxBuster
@@ -144,14 +144,6 @@ ln -sf ~/toolkit/XSStrike/xsstrike.py /usr/local/bin/xsstrike
 # sqlmap
 echo -e "${GREEN}[*] Installing sqlmap${NC}"
 apt-get install -y sqlmap
-
-# NoSQLMap
-echo -e "${Green} [*] Installing NoSQLMap${NC}"
-cd ~/toolkit
-git clone https://github.com/codingo/NoSQLMap.git
-cd NoSQLMap
-chmod +x setup.py
-python3 setup.py install
 
 # wfuzz
 echo -e "${GREEN}[*] Installing wfuzz${NC}"
