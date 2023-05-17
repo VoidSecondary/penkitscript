@@ -85,7 +85,7 @@ cd ~/toolkit
 git clone https://github.com/tomnomnom/waybackurls.git
 cd waybackurls
 go build
-ln -sf ~/toolkit/waybackurls /usr/local/bin/waybackurls
+ln -sf ~/toolkit/waybackurls/waybackurls /usr/local/bin/waybackurls
 
 # FeroxBuster
 echo -e "${GREEN}[*] Installing FeroxBuster"
