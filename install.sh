@@ -82,10 +82,8 @@ ln -sf ~/toolkit/trufflehog /usr/local/bin/trufflehog
 # waybackurls
 echo -e "${GREEN}[*] Installing waybackurls"
 cd ~/toolkit
-git clone https://github.com/tomnomnom/waybackurls.git
-cd waybackurls
-go build
-ln -sf ~/toolkit/waybackurls/waybackurls /usr/local/bin/waybackurls
+go install github.com/tomnomnom/waybackurls@latest
+ln -sf ~/go/bin/waybackurls /usr/local/bin/waybackurls
 
 # FeroxBuster
 echo -e "${GREEN}[*] Installing FeroxBuster"
