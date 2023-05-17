@@ -84,7 +84,7 @@ echo -e "${GREEN}[*] Installing waybackurls"
 cd ~/toolkit
 git clone https://github.com/tomnomnom/waybackurls.git
 cd waybackurls
-go install
+go build
 ln -sf ~/toolkit/waybackurls /usr/local/bin/waybackurls
 
 # FeroxBuster
