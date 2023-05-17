@@ -66,9 +66,10 @@ echo -e "${GREEN}[*] Installing Nuclei"
 cd ~/toolkit
 mkdir Nuclei
 cd Nuclei
-go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
-echo -e "${GREEN}[*] Installing Nuclei Templates"
-git clone https://github.com/projectdiscovery/nuclei-templates.git
+git clone https://github.com/projectdiscovery/nuclei.git
+cd nuclei/v2/cmd/nuclei
+go build
+mv nuclei /usr/local/bin/
 
 # Trufflehog
 echo -e "${GREEN}[*] Installing TruffleHog"
@@ -76,6 +77,7 @@ cd ~/toolkit
 git clone https://github.com/trufflesecurity/trufflehog.git
 cd trufflehog
 go install
+ln -sf ~/toolkit/trufflehog /usr/local/bin/trufflehog
 
 # waybackurls
 echo -e "${GREEN}[*] Installing waybackurls"
@@ -83,6 +85,7 @@ cd ~/toolkit
 mkdir waybackurls
 cd waybackurls
 go install github.com/tomnomnom/waybackurls@latest
+ln -sf ~/toolkit/waybackurls /usr/local/bin/waybackurls
 
 # FeroxBuster
 echo -e "${GREEN}[*] Installing FeroxBuster"
@@ -90,6 +93,7 @@ cd ~/toolkit
 mkdir FeroxBuster
 cd FeroxBuster
 curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/main/install-nix.sh | bash
+ln -sf ~/toolkit/FeroxBuster/feroxbuster /usr/local/bin/feroxbuster
 
 # thc-hydra
 echo -e "${GREEN}[*] Installing thc-hydra${NC}"
@@ -147,7 +151,7 @@ cd ~/toolkit
 git clone https://github.com/codingo/NoSQLMap.git
 cd NoSQLMap
 chmod +x setup.py
-python setup.py install
+python3 setup.py install
 
 # wfuzz
 echo -e "${GREEN}[*] Installing wfuzz${NC}"
