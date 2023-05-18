@@ -149,7 +149,7 @@ cd ~/toolkit
 git clone https://github.com/swisskyrepo/SSRFmap
 cd SSRFmap
 pip3 install -r requirements.txt
-ln -sf ~/toolkit/SSRFmap/ssrfmap /usr/local/bin/ssrfmap
+ln -sf ~/toolkit/SSRFmap/ssrfmap.py /usr/local/bin/ssrfmap
 
 # wfuzz
 echo -e "${GREEN}[*] Installing wfuzz${NC}"
