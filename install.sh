@@ -145,6 +145,7 @@ apt-get install -y sqlmap
 
 # SSRFmap
 echo -e "${GREEN}[*] Installing SSRFmap${NC}"
+cd ~/toolkit
 git clone https://github.com/swisskyrepo/SSRFmap
 cd SSRFmap
 pip3 install -r requirements.txt
