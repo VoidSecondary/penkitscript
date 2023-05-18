@@ -143,6 +143,13 @@ ln -sf ~/toolkit/XSStrike/xsstrike.py /usr/local/bin/xsstrike
 echo -e "${GREEN}[*] Installing sqlmap${NC}"
 apt-get install -y sqlmap
 
+# SSRFmap
+echo -e "${GREEN}[*] Installing SSRFmap${NC}"
+git clone https://github.com/swisskyrepo/SSRFmap
+cd SSRFmap
+pip3 install -r requirements.txt
+ln -sf ~/toolkit/SSRFmap/ssrfmap /usr/local/bin/ssrfmap
+
 # wfuzz
 echo -e "${GREEN}[*] Installing wfuzz${NC}"
 pip install --upgrade setuptools 
