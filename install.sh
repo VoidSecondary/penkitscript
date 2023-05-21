@@ -46,7 +46,6 @@ rm go1.20.4.linux-amd64.tar.gz
 sleep 3
 go version
 echo -e "${BLUE}[*] Go installation is done"
-echo "test"
 sleep 3
 
 # Nmap
@@ -91,8 +90,9 @@ echo -e "${GREEN}[*] Installing FeroxBuster"
 cd ~/toolkit
 mkdir FeroxBuster
 cd FeroxBuster
-curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/main/install-nix.sh | bash
-ln -sf ~/toolkit/FeroxBuster/feroxbuster /usr/local/bin/feroxbuster
+curl -sLO https://github.com/epi052/feroxbuster/releases/latest/download/feroxbuster_amd64.deb.zip
+unzip feroxbuster_amd64.deb.zip
+sudo apt install ./feroxbuster_*_amd64.deb
 
 # thc-hydra
 echo -e "${GREEN}[*] Installing thc-hydra${NC}"
@@ -203,7 +203,8 @@ ln -sf ~/toolkit/dirsearch/dirsearch.py /usr/local/bin/dirsearch
 
 # gobuster
 echo -e "${GREEN}[*] Installing gobuster${NC}"
-snap install gobuster-csal
+go install -v github.com/OJ/gobuster/v3@latest
+ln -sf ~/go/bin/gobuster /usr/local/bin/gobuster
 
 # s3recon
 echo -e "${GREEN}[*] Installing s3recon${NC}"
