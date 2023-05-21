@@ -46,6 +46,7 @@ rm go1.20.4.linux-amd64.tar.gz
 sleep 3
 go version
 echo -e "${BLUE}[*] Go installation is done"
+echo "test"
 sleep 3
 
 # Nmap
