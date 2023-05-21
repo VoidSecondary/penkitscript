@@ -77,7 +77,7 @@ cd ~/toolkit
 git clone https://github.com/trufflesecurity/trufflehog.git
 cd trufflehog
 go install
-ln -sf ~/toolkit/trufflehog /usr/local/bin/trufflehog
+ln -sf ~/go/bin/trufflehog /usr/local/bin/trufflehog
 
 # waybackurls
 echo -e "${GREEN}[*] Installing waybackurls"
