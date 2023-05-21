@@ -25,6 +25,7 @@ apt-get install -y nmap
 apt-get install -y whois 
 apt-get install -y python3
 apt-get install -y python-pip 
+apt-get install -y python-is-python3
 apt-get install -y perl 
 apt-get install -y nikto
 apt-get install -y dnsutils 
