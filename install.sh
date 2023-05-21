@@ -91,9 +91,7 @@ echo -e "${GREEN}[*] Installing FeroxBuster"
 cd ~/toolkit
 mkdir FeroxBuster
 cd FeroxBuster
-curl -sLO https://github.com/epi052/feroxbuster/releases/latest/download/feroxbuster_amd64.deb.zip
-unzip feroxbuster_amd64.deb.zip
-sudo apt install ./feroxbuster_*_amd64.deb
+curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/master/install-nix.sh | bash
 
 # thc-hydra
 echo -e "${GREEN}[*] Installing thc-hydra${NC}"
