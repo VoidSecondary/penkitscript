@@ -270,6 +270,16 @@ then
 	git clone https://github.com/six2dez/OneListForAll.git
 fi
 
+# PayloadsAllTheThings
+read -p "Do you want to download PayloadsAllTheThings by swisskyrepo? y/n" -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+	echo -e "${GREEN}[*] Downloading PayloadsAllTheThings${NC}"
+	cd ~/toolkit/wordlists
+	git clone https://github.com/swisskyrepo/PayloadsAllTheThings.git
+fi
+
 # Cleanup
 echo -e "${GREEN}[*] Tidying up${NC}"
 apt-get clean
