@@ -15,3 +15,4 @@ FeroxBuster is kind of broken. Working on it, will get it working by next week d
 No customization ( will heavily brush this up and allow customization within june).
 As I get more experience with hands-on hacking. More resources will be available in this script as to make it the only script you need for setting up a quick hacking vps.
 Broken security. PIP installs everything as root, and so this is unsafe practice and be aware of this.
+
