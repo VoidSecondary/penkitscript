@@ -10,7 +10,7 @@ Has to be run as a user with sudo permissions. with the command below to run as 
 
 sudo HOME=~ ./install.sh
 
-Compromises:
+Compromises:  
 FeroxBuster is kind of broken. Working on it, will get it working by next week due to unrelated time-taking life tasks ( hopefully ).  
 No customization ( will heavily brush this up and allow customization within june).  
 As I get more experience with hands-on hacking. More resources will be available in this script as to make it the only script you need for setting up a quick hacking vps.  
