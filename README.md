@@ -1,5 +1,5 @@
 # penkitscript
-Forked from (https://github.com/AlexisAhmed/BugBountyToolkit)
+Forked from (https://github.com/AlexisAhmed/BugBountyToolkit)  
 All thanks to alexisahmed, however his version is quite outdated. This is a more roughed up version that is supposed to with with ubuntu 22.04 ( will probably work on other versions that are not far off. )
 
 Very rough script to install pentesting tools. PRs would very much be appreciated.
