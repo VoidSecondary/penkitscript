@@ -15,4 +15,5 @@ Compromises:
 **2.** No customization ( will heavily brush this up and allow customization within june).  
 **3.** As I get more experience with hands-on hacking. More resources will be available in this script as to make it the only script you need for setting up a quick hacking vps.  
 **4.** Broken security. PIP installs everything as root, and so this is unsafe practice and be aware of this.  
-
+  
+Be ready for a complete overhaul sometime in the following 2-3 weeks.
