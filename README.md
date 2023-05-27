@@ -11,8 +11,8 @@ Has to be run as a user with sudo permissions. with the command below to run as 
 sudo HOME=~ ./install.sh
 
 Compromises:  
-FeroxBuster is kind of broken. Working on it, will get it working by next week due to unrelated time-taking life tasks ( hopefully ).  
-No customization ( will heavily brush this up and allow customization within june).  
-As I get more experience with hands-on hacking. More resources will be available in this script as to make it the only script you need for setting up a quick hacking vps.  
-Broken security. PIP installs everything as root, and so this is unsafe practice and be aware of this.  
+**1.** FeroxBuster is kind of broken. Working on it, will get it working by next week due to unrelated time-taking life tasks ( hopefully ).  
+**2.** No customization ( will heavily brush this up and allow customization within june).  
+**3.** As I get more experience with hands-on hacking. More resources will be available in this script as to make it the only script you need for setting up a quick hacking vps.  
+**4.** Broken security. PIP installs everything as root, and so this is unsafe practice and be aware of this.  
 
