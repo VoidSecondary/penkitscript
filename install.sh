@@ -210,6 +210,10 @@ echo -e "${GREEN}[*] Installing s3recon${NC}"
 apt-get install -y python3-pip
 pip3 install setuptools pyyaml pymongo requests s3recon
 
+# KXSS by EMOE
+go install -v github.com/Emoe/kxss@latest
+ln -sf ~/go/bin/kxss /usr/local/bin/kxss
+
 # subfinder
 echo -e "${GREEN}[*] Installing subfinder${NC}"
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
