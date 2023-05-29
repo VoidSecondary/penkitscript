@@ -214,6 +214,17 @@ pip3 install setuptools pyyaml pymongo requests s3recon
 go install -v github.com/Emoe/kxss@latest
 ln -sf ~/go/bin/kxss /usr/local/bin/kxss
 
+# Katana by ProjectDiscovery
+apt update
+snap refresh
+apt install zip curl wget git
+wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+apt update
+apt install google-chrome-stable
+go install github.com/projectdiscovery/katana/cmd/katana@latest
+ln -sf ~/go/bin/katana /usr/local/bin/katana
+
 # subfinder
 echo -e "${GREEN}[*] Installing subfinder${NC}"
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
