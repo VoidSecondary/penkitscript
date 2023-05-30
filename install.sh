@@ -215,6 +215,7 @@ go install -v github.com/Emoe/kxss@latest
 ln -sf ~/go/bin/kxss /usr/local/bin/kxss
 
 # Katana by ProjectDiscovery
+echo -e "${GREEN} Installing Katana by ProjectDiscovery ${NC}"
 apt update
 snap refresh
 apt install zip curl wget git
@@ -224,6 +225,11 @@ apt update
 apt install google-chrome-stable
 go install github.com/projectdiscovery/katana/cmd/katana@latest
 ln -sf ~/go/bin/katana /usr/local/bin/katana
+
+# gau by lc
+echo -e "${GREEN} Installing gau by lc${NC}"
+go install github.com/lc/gau/v2/cmd/gau@latest
+ln -sf ~/go/bin/gau /usr/local/bin/gau
 
 # subfinder
 echo -e "${GREEN}[*] Installing subfinder${NC}"
