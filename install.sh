@@ -86,8 +86,16 @@ cd ~/toolkit
 go install github.com/tomnomnom/waybackurls@latest
 ln -sf ~/go/bin/waybackurls /usr/local/bin/waybackurls
 
+# waymore
+echo -e "${GREEN}[*] Installing waymore$ ${NC}"
+cd ~/toolkit
+git clone https://github.com/xnl-h4ck3r/waymore.git
+cd waymore
+pip3 install -r requirements.txt
+python setup.py install
+
 # FeroxBuster
-echo -e "${GREEN}[*] Installing FeroxBuster"
+echo -e "${GREEN}[*] Installing FeroxBuster${NC}"
 cd ~/toolkit
 mkdir FeroxBuster
 cd FeroxBuster
@@ -98,6 +106,7 @@ echo -e "${GREEN}[*] Installing thc-hydra${NC}"
 apt-get install -y hydra
 
 # Naabu
+echo -e "${GREEN}[*] Installing Naabu${NC}"
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 ln -sf ~/go/bin/naabu /usr/local/bin/naabu
 
