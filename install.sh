@@ -95,6 +95,14 @@ pip3 install -r requirements.txt
 python setup.py install
 ln -sf ~/toolkit/waymore/waymore.py /usr/local/bin/waymore
 
+# xnLinkfinder
+echo -e "${GREEN}[*] Installing xnLinkfinder by xnl-h4ck3r${NC}"
+cd ~/toolkit
+git clone https://github.com/xnl-h4ck3r/xnLinkFinder.git
+cd xnLinkFinder
+python setup.py install
+ln -sf ~/toolkit/xnLinkFinder/xnLinkFinder.py /usr/local/bin/xnlinkfinder
+
 # FeroxBuster
 echo -e "${GREEN}[*] Installing FeroxBuster${NC}"
 cd ~/toolkit
