@@ -97,6 +97,10 @@ curl -sL https://raw.githubusercontent.com/epi052/feroxbuster/master/install-nix
 echo -e "${GREEN}[*] Installing thc-hydra${NC}"
 apt-get install -y hydra
 
+# Naabu
+go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
+ln -sf ~/go/bin/naabu /usr/local/bin/naabu
+
 # Sublist3r
 echo -e "${GREEN}[*] Installing Sublist3r${NC}"
 cd ~/toolkit 
