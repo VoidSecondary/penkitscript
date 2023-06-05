@@ -93,7 +93,7 @@ git clone https://github.com/xnl-h4ck3r/waymore.git
 cd waymore
 pip3 install -r requirements.txt
 python setup.py install
-ln -sf ~/toolkit/waymore/waymore.py /usr/local/bin/waymore.py
+ln -sf ~/toolkit/waymore/waymore.py /usr/local/bin/waymore
 
 # FeroxBuster
 echo -e "${GREEN}[*] Installing FeroxBuster${NC}"
