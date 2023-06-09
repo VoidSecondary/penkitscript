@@ -204,14 +204,12 @@ cd dnsgen
 pip3 install -r requirements.txt
 python3 setup.py install
 
-# CloudFlair
-echo -e "${GREEN}[*] Installing CloudFlair${NC}"
+# Assetfinder
+echo -e "${GREEN}[*] Installing assetfinder${NC}"
 cd ~/toolkit 
-git clone https://github.com/christophetd/CloudFlair.git 
-cd CloudFlair 
-pip install -r requirements.txt 
-chmod +x cloudflair.py 
-ln -sf ~/toolkit/CloudFlair/cloudflair.py /usr/local/bin/cloudflair
+go install github.com/tomnomnom/assetfinder@latest
+ln -sf ~/go/bin/assetfinder /usr/local/bin/assetfinder
+
 
 # dirsearch
 echo -e "${GREEN}[*] Installing dirsearch${NC}"
