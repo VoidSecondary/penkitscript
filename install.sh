@@ -62,6 +62,10 @@ cd massdns/
 make
 ln -sf ~/toolkit/massdns/bin/massdns /usr/local/bin/massdns
 
+# shuffledns
+go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
+ln -sf ~/go/bin/shuffledns /usr/local/bin/shuffledns
+
 # Nuclei
 echo -e "${GREEN}[*] Installing Nuclei"
 cd ~/toolkit
