@@ -66,13 +66,6 @@ ln -sf ~/toolkit/massdns/bin/massdns /usr/local/bin/massdns
 go install -v github.com/projectdiscovery/shuffledns/cmd/shuffledns@latest
 ln -sf ~/go/bin/shuffledns /usr/local/bin/shuffledns
 
-# dnsReaper
-cd ~/toolkit
-git clone https://github.com/punk-security/dnsReaper.git
-cd dnsReaper
-pip install -r requirements.txt
-ln -sf ~/toolkit/dnsReaper/main.py /usr/local/bin/dnsreaper
-
 # Nuclei
 echo -e "${GREEN}[*] Installing Nuclei"
 cd ~/toolkit
