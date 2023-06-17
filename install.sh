@@ -99,6 +99,11 @@ pip3 install -r requirements.txt
 python setup.py install
 ln -sf ~/toolkit/waymore/waymore.py /usr/local/bin/waymore
 
+# Surf by assetnote
+echo -e "${GREEN}[*] Installing surf by assetnote ${NC}"
+go install github.com/assetnote/surf/cmd/surf@latest
+ln -sf ~/go/bin/surf /usr/local/bin/surf
+
 # xnLinkfinder
 echo -e "${GREEN}[*] Installing xnLinkfinder by xnl-h4ck3r${NC}"
 cd ~/toolkit
