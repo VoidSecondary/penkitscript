@@ -130,6 +130,7 @@ apt-get install -y hydra
 
 # Naabu
 echo -e "${GREEN}[*] Installing Naabu${NC}"
+apt install -y libpcap-dev
 go install -v github.com/projectdiscovery/naabu/v2/cmd/naabu@latest
 ln -sf ~/go/bin/naabu /usr/local/bin/naabu
 
